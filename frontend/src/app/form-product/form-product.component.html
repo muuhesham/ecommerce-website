@@ -1,0 +1,34 @@
+<div class="add-product-form">
+  <h2>Add New Product</h2>
+  <form (ngSubmit)="onSubmit()" #productForm="ngForm">
+    <div>
+      <label for="name">Product Name:</label>
+      <input id="name" name="name" [(ngModel)]="productData.name" required />
+    </div>
+
+    <div>
+      <label for="description">Description:</label>
+      <input id="description" name="desc" [(ngModel)]="productData.desc" required />
+    </div>
+
+    <div>
+      <label for="price">Price:</label>
+      <input id="price" name="price" [(ngModel)]="productData.price" required type="number" placeholder="0" />
+    </div>
+
+    <div>
+      <label for="image">Product Image:</label>
+      <input type="file" id="img" name="img" (change)="onFileChange($event)" required />
+    </div>
+
+    <div>
+      <label for="category">Category:</label>
+      <select id="category" name="category" [(ngModel)]="productData.category" required>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+      </select>
+    </div>
+
+    <button type="submit" [disabled]="!productForm.valid">Add Product</button>
+  </form>
+</div>

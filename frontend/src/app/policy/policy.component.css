@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Rajdhani", system-ui;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.container {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Help Section Styles */
+.help-section {
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+.font {
+    font-family: "Notable";
+    font-size: 300%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+}
+.help-item {
+    margin-bottom: 20px;
+}
+
+.help-item h2 {
+    color: #fdd835;
+    margin-bottom: 10px;
+}
+
+.help-item p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.help-item a {
+    color: #fdd835;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.help-item a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,81 @@
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 5px 10px;
+  font-family: "Rajdhani", system-ui;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-top: 2px solid #fdd835;
+  font-size: 16px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links ul li {
+  margin-bottom: 0;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #fdd835;
+}
+
+.contact-section .social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fdd835;
+}
+
+.footer-rights {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-links a i {
+  margin-right: 8px;
+}
+
+.social-links a:hover i {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}

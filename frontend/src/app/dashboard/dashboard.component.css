@@ -1,0 +1,55 @@
+.link {
+  text-decoration: none;
+}
+
+.add-product-btn {
+  position: relative;
+  right: 20px;
+  padding: 12px 15px;
+  background-color: #3498db;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.add-product-btn:hover {
+  background-color: #2980b9;
+}
+
+h1{
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  color: yellow;
+}
+
+.card {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  text-align: center;
+  color: yellow;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: yellow;
+}
+
+.card p {
+  font-size: 24px;
+  color: yellow;
+  font-weight: bold;
+}

@@ -1,0 +1,59 @@
+body {
+    font-family: "Rajdhani", system-ui;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.font {
+    font-family: "Notable";
+    font-size: 500%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #fdd835;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* About Section */
+.about-section {
+    background-color: #000000;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 100%;
+
+}
+
+.about-section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 8px;
+}

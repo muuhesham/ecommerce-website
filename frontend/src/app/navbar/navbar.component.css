@@ -1,0 +1,68 @@
+.sign-button {
+  background: none;
+  border: none;
+  color: #fdd835;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  padding: 7px 20px;
+  text-transform: uppercase;
+}
+
+.sign-button:hover {
+  color: #ffb300;
+}
+
+.cart-popup-content {
+  padding: 20px;
+}
+
+.cart-total {
+  position: absolute;
+  bottom: 230px;
+  left: 60%;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.place-order-btn {
+  position: absolute;
+  bottom: 300px;
+  left: 30%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.place-order-btn2{
+  position: absolute;
+  bottom: 250px;
+  left: 30%;
+  transform: translateX(-50%);
+  background-color: #fdd835e8;
+  color: white;
+  border: none;
+  padding: 10px 38px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.place-order-btn:hover {
+  background-color: #0056b3;
+}
+
+.place-order-btn2:hover {
+  background-color: #e6c42ce0;
+}

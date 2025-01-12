@@ -1,0 +1,77 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<header class="main">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+    <label for="menu-toggle" class="hamburger">
+      <i class="fas fa-bars"></i>
+    </label>
+
+  <div class="nav-list">
+    <a routerLink="">HOME</a>
+    <a routerLink="/products">OUR PRODUCTS</a>
+    <a routerLink="/products/categories/677af5d4313e7672ddc1335a">MEN CATEGORY</a>
+    <a routerLink="/products/categories/677b076184de9611c9f6d88a">WOMEN CATEGORY</a>
+    <a routerLink="/about">ABOUT US</a>
+    <a routerLink="/contact">CONTACT US</a>
+    <a routerLink="/help">HELP</a>
+  </div>
+
+  <a routerLink="">
+    <h1 class="font">GEN-Z</h1>
+  </a>
+
+  <div class="search-container">
+
+    <input type="text" placeholder="Search for Products or any Categories...">
+    <button>
+      <img src="https://img.icons8.com/ios-filled/50/000000/search.png" alt="Search Icon">
+    </button>
+  </div>
+
+  <nav>
+    <div *ngIf="isLoggedIn(); else showLoginRegister" class="auth">
+      <button (click)="logout()" class="sign-button">Logout</button>
+    </div>
+
+    <ng-template #showLoginRegister>
+      <button routerLink="/user/login" class="sign-button">Log in</button>
+      <button routerLink="/register" class="sign-button">Register</button>
+    </ng-template>
+
+
+    <label for="cart-toggle" class="cart-toggle-label">
+      YOUR CART &nbsp;
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span class="cart-count">{{ cartItems.length }}</span>
+    </label>
+
+    <input type="checkbox" id="cart-toggle" class="cart-toggle">
+    <div class="cart-popup"  >
+        <div class="bar"></div>
+      <div class="cart-popup-content">
+        <h3>Your Cart</h3>
+        <div *ngIf="cartItems.length > 0; else emptyCart">
+          <div *ngFor="let item of cartItems" class="cart-item">
+            <p>{{ item.name }} ({{ item.size }}) x{{ item.quantity }}</p>
+            <p>Price: {{ item.price }}$</p>
+          </div>
+          <div class="cart-total">
+            <p>Total Price: {{ totalPrice }}$</p>
+          </div>
+          <button class="place-order-btn" (click)="placeorder()">Place Order</button>
+          <button class="place-order-btn2" (click)="clearCart()">Clear Cart</button>
+        </div>
+        <div *ngIf="orderStatus === 'pending'">
+          <p>Your order is currently pending.</p>
+        </div>
+        <ng-template #emptyCart>
+          <p>Your cart is empty.</p>
+        </ng-template>
+      </div>
+    </div>
+
+  </nav>
+</header>
